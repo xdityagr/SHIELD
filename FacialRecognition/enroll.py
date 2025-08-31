@@ -7,7 +7,6 @@ Email  : adityagaur.home@gmail.com
 """
 
 import face_recognition,cv2,pickle
-#import spreadsheet
 photo_folder = "known face photos\\"
 facial_encodings_folder = "known face encodings\\"
 
@@ -43,3 +42,4 @@ def enroll_via_camera(name):
 	email=input("Enter email address: ")
 
 	#spreadsheet.enroll_person_to_sheet(name,email)
+
