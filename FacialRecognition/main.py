@@ -6,6 +6,7 @@ recognition.load_facial_encodings_and_names_from_memory()
 recognition.run_recognition()
 # name=input("Name:")
 #enroll.enroll_via_camera(name)
-#enroll.encoding_of_enrolled_person("Kayaan","C:\Users\VBPS_ATL\Desktop\Advanced Facial Recognition By Aditya\source\known face photos\Kayaan.jpg")
+#enroll.encoding_of_enrolled_person("Name","Path")
+
 
 
