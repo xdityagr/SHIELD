@@ -10,9 +10,6 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-
-
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
@@ -680,4 +677,5 @@ class Ui_MainWindow(object):
         self.found_content.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Aadhaar :</span><span style=\" font-size:10pt;\"> 2015XXXXXX</span></p><p><span style=\" font-size:10pt; font-weight:600;\">Phone Number :</span><span style=\" font-size:10pt;\"> 9899XXXXX</span></p><p><span style=\" font-size:10pt; font-weight:600;\">Last Located at :</span><span style=\" font-size:10pt;\"> New Delhi, Rohini, Main Road [3:15 PM]</span></p><p><span style=\" font-size:10pt; font-weight:600;\">Via</span><span style=\" font-size:10pt;\"> : Facial Recoginiton (WSN)<br/></span></p></body></html>", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.statusTab), QCoreApplication.translate("MainWindow", u"Status", None))
     # retranslateUi
+
 
