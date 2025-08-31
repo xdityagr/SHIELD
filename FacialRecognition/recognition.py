@@ -50,12 +50,7 @@ def run_recognition():
                     matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
                     name = "Unknown"
 
-               # # If a match was found in known_face_encodings, just use the first one.
-                    # if True in matches:
-                    #      first_match_index = matches.index(True)
-                    #      name = known_face_names[first_match_index]
 
-               # Or instead, use the known face with the smallest distance to the new face
                     face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
                     best_match_index = np.argmin(face_distances)
                     if matches[best_match_index]:
@@ -90,21 +85,13 @@ def run_recognition():
                               cv2.rectangle(frame, (left, bottom), (right, bottom), (0, 255, 0), cv2.FILLED)
                               font = cv2.FONT_HERSHEY_DUPLEX
                               cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
-                    #           # engine.say("WELCOME")
-                    #           # engine.say(name)
-                    #           # engine.runAndWait()
-                    # # Display the resulting image
-                              # cv2.putText(frame, f"MATCH : {name}", (20, 450), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 3)
- 
+
                cv2.imshow('Video', frame)    
                flag=-1
                     
                
-
-          # Hit 'q' on the keyboard to quit!
                if cv2.waitKey(1) & 0xFF==ord('q') or flag==0:
                     break
-               
-          # Release handle to the webcam
      video_capture.release()
+
      cv2.destroyAllWindows()
