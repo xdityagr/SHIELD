@@ -1,3 +1,11 @@
+""" 
+SHIELD Facial Recognition Module - Recognition Source 
+Developed by Aditya Gaur
+Github : @xdityagr 
+Email  : adityagaur.home@gmail.com 
+
+"""
+
 import face_recognition,cv2,os,pickle
 import numpy as np
 import pyttsx3
@@ -95,3 +103,4 @@ def run_recognition():
      video_capture.release()
 
      cv2.destroyAllWindows()
+
