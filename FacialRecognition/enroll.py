@@ -1,3 +1,11 @@
+""" 
+SHIELD Facial Recognition Module - Enrollment 
+Developed by Aditya Gaur
+Github : @xdityagr 
+Email  : adityagaur.home@gmail.com 
+
+"""
+
 import face_recognition,cv2,pickle
 #import spreadsheet
 photo_folder = "known face photos\\"
@@ -33,4 +41,5 @@ def enroll_via_camera(name):
 			break
 	cap.release()
 	email=input("Enter email address: ")
+
 	#spreadsheet.enroll_person_to_sheet(name,email)
