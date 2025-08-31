@@ -1,3 +1,12 @@
+""" 
+SHIELD Console GUI 
+Developed by Aditya Gaur
+Github : @xdityagr 
+Email  : adityagaur.home@gmail.com 
+
+"""
+
+
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
@@ -5,7 +14,7 @@ from PySide2.QtWidgets import QDialog
 
 from PySide2 import QtCore, QtGui, QtWidgets
 
-from ui_newUIShield import Ui_MainWindow
+from ui_UIShield import Ui_MainWindow
 import sys, time
 
 from sckt_recv import recv_data
@@ -292,3 +301,4 @@ class ShieldConsole(QMainWindow):
 app = QtWidgets.QApplication(sys.argv)
 window = ShieldConsole()
 sys.exit(app.exec_())
+
